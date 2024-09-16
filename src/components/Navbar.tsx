@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation";
 import ThemeToggler from "./ui/ThemeToggler";
 import { NavList } from "@/constants/data";
 import { cn } from "@/lib/utils";
+import MobileNav from "./MobileNav";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -20,8 +21,8 @@ const Navbar = () => {
           <nav className="flex items-center justify-center gap-4 pt-1 hidden md:inline-flex">
             {NavList.map((nav) => (
               <Link
-                href={nav.href}
                 key={nav.name}
+                href={nav.href}
                 className={cn(
                   "flex items-center justify-center gap-2 hover:bg-secondary hover:text-white p-2 transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none  ",
                   {
@@ -36,7 +37,10 @@ const Navbar = () => {
             ))}
           </nav>
         </aside>
-        <ThemeToggler />
+        <div className="flex items-center justify-center gap-2">
+          <ThemeToggler />
+          <MobileNav />
+        </div>
       </div>
     </header>
   );
