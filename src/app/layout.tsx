@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 
 import ThemeProvider from "@/context/ThemeProvider";
 import "./globals.css";
+import Hero from "@/components/Hero";
 
 const fonts = Comic_Neue({
   weight: ["400"],
@@ -26,10 +27,11 @@ export default function RootLayout({
       <body className={fonts.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           disableTransitionOnChange
         >
           <Navbar />
+          <Hero />
           {children}
         </ThemeProvider>
       </body>

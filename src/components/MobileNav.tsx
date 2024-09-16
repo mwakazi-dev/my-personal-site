@@ -1,4 +1,5 @@
 import { MenuIcon } from "lucide-react";
+import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
 import {
@@ -11,7 +12,6 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { NavList } from "@/constants/data";
-import Link from "next/link";
 
 const MobileNav = () => {
   return (
