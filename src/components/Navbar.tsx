@@ -1,17 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 import ThemeToggler from "./ui/ThemeToggler";
 import { NavList } from "@/constants/data";
 import { cn } from "@/lib/utils";
-import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <header className="flex flex-col justify-center items-center py-2 px-4 bg-white">
+    <header className="flex flex-col justify-center items-center py-2 px-4 bg-white dark:bg-background">
       <div className="flex items-center justify-between w-full md:w-[54%]">
         <aside className="flex items-center justify-center gap-4">
           <h1 className="antialiased font-bold w-fit text-xl p-0 m-0 align-sub">
@@ -28,6 +28,7 @@ const Navbar = () => {
                     "bg-secondary text-white": pathname === nav.href,
                   }
                 )}
+                target={nav.isExternal ? "_blank" : ""}
               >
                 {nav.icon && nav.icon}
                 {nav.name}
