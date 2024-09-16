@@ -1,3 +1,5 @@
-export default function Home() {
-  return <div className="g ">Johnson Mwakazi</div>;
-}
+const Home = () => {
+  return <div className="bg-background">Johnson Mwakazi</div>;
+};
+
+export default Home;
