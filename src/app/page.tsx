@@ -10,10 +10,10 @@ const Home = () => {
     <div className="bg-background ">
       <Salutation />
       <Profile />
-      <About />
-      <Bio />
-      <Desire />
-      <Socials />
+      <About title="About" />
+      <Bio title="Bio" />
+      <Desire title="I ❤️" />
+      <Socials title="On the Web" />
     </div>
   );
 };

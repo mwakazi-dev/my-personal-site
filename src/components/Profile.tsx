@@ -1,3 +1,4 @@
+"use client";
 import withWrapper from "@/hoc/withWrapper";
 import Image from "next/image";
 import React from "react";

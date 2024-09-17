@@ -15,9 +15,12 @@ const Navbar = () => {
     <header className="fixed top-0 w-full flex flex-col justify-center items-center py-2 px-4 bg-white dark:bg-background z-50">
       <div className="flex items-center justify-between w-full md:w-[54%]">
         <aside className="flex items-center justify-center gap-4">
-          <h1 className="antialiased font-bold w-fit text-xl p-0 m-0 align-sub">
+          <Link
+            href="/"
+            className="antialiased font-bold w-fit text-xl p-0 m-0 align-sub"
+          >
             Johnson Mwakazi
-          </h1>
+          </Link>
           <nav className="flex items-center justify-center gap-4 pt-1 hidden md:inline-flex">
             {NavList.map((nav) => (
               <Link
