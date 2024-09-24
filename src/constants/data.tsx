@@ -39,10 +39,22 @@ export const BioList: Bio[] = [
   },
 
   {
-    year: "2020",
+    year: "2017",
     description: "Worked as a Frontend Developer at ",
     companyLink: "https://www.mjengosmart.com/",
     companyName: "Mjengo Smart",
+  },
+  {
+    year: "2019",
+    description: "Worked as a Frontend Developer at ",
+    companyLink: "https://www.wakilichapchap.co.ke/",
+    companyName: "Wakili ChapChap",
+  },
+  {
+    year: "2021",
+    description: "Worked as a Frontend Developer at ",
+    companyLink: "https://www.friyay.io/",
+    companyName: "Friyay",
   },
   {
     year: "2024",
