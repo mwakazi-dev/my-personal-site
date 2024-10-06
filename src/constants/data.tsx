@@ -14,7 +14,7 @@ export const NavList: Nav[] = [
   { name: "Works", href: "/works" },
   {
     name: "Github",
-    href: "https://github.com/jmwakz99",
+    href: "https://github.com/johnsonmwakazi-dev",
     isExternal: true,
     icon: <GitHubLogoIcon />,
   },
@@ -130,5 +130,123 @@ export const works: Work[] = [
       "/images/afrotasker3.png",
     ],
     year: "2024",
+  },
+];
+
+export const SKILLS = [
+  {
+    id: 1,
+    name: "JavaScript",
+    designation: "5 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+  },
+  {
+    id: 2,
+    name: "TypeScript",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
+  },
+  {
+    id: 3,
+    name: "React/React Native",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+  },
+  {
+    id: 4,
+    name: "Next.js",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+  },
+  {
+    id: 5,
+    name: "Tailwind CSS",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+  },
+  {
+    id: 6,
+    name: "Ant Design",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/antdesign/antdesign-original.svg",
+  },
+  {
+    id: 7,
+    name: "Firebase",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+  },
+
+  {
+    id: 8,
+    name: "Redux",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+  },
+
+  {
+    id: 9,
+    name: "Jest",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
+  },
+
+  {
+    id: 10,
+    name: "Cypress",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-plain-wordmark.svg",
+  },
+  {
+    id: 11,
+    name: "HTML5",
+    designation: "5 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg",
+  },
+  {
+    id: 12,
+    name: "CSS3",
+    designation: "5 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+  },
+  {
+    id: 13,
+    name: "GraphQl",
+    designation: "2 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/graphql/graphql-plain.svg",
+  },
+  {
+    id: 14,
+    name: "Git",
+    designation: "5 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+  },
+  {
+    id: 15,
+    name: "Github",
+    designation: "5 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
+  },
+  {
+    id: 16,
+    name: "Gitlab",
+    designation: "4 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
   },
 ];

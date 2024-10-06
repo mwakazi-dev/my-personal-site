@@ -3,6 +3,7 @@ import Bio from "@/components/Bio";
 import Desire from "@/components/Desire";
 import Profile from "@/components/Profile";
 import Salutation from "@/components/Salutation";
+import Skills from "@/components/Skills";
 import Socials from "@/components/SocialNetwork";
 
 const Home = () => {
@@ -12,6 +13,7 @@ const Home = () => {
       <Profile />
       <About title="About" />
       <Bio title="Bio" />
+      <Skills title="Skills" />
       <Desire title="I ❤️" />
       <Socials title="On the Web" />
     </div>

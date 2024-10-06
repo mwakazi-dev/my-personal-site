@@ -9,8 +9,9 @@ const Hero = () => {
         <blockquote>
           “In mobile, people only look at a phone’s screen for about 90 seconds.
           They want relevant information quickly, which means one swipe, and
-          they should be done.” – Marissa Mayer
+          they should be done.”
         </blockquote>
+        <p>– Marissa Mayer</p>
         💻
       </Cover>
     </div>
