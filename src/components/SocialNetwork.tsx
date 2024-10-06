@@ -1,18 +1,18 @@
 "use client";
-import withWrapper from "@/hoc/withWrapper";
+import Link from "next/link";
 
 import { Socials } from "@/constants/data";
-import Link from "next/link";
+import withWrapper from "@/hoc/withWrapper";
 
 const SocialNetwork = () => {
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex flex-col">
       {Socials.map((social) => (
         <Link
           key={social.name}
           href={social.href}
           target={social.isExternal ? "_blank" : "_self"}
-          className="flex gap-4 hover:bg-secondary p-2 w-full items-center "
+          className="flex gap-4 hover:bg-secondary p-1 w-full items-center "
         >
           {social.icon}
           <p className="text-md antialiased">{social.name}</p>

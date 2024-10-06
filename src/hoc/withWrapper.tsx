@@ -10,7 +10,7 @@ type Props = {
 const withWrapper = (WrappedComponent: any): FC<any> => {
   const WithSection: FC<Props> = (props) => {
     return (
-      <div className="flex flex-col justify-center p-4 md:w-[40%] mx-auto  gap-2 ">
+      <div className="flex flex-col justify-center p-4 md:w-[45%] mx-auto  gap-2 ">
         {props.title && (
           <AnimatePresence>
             <motion.div

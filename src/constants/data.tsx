@@ -38,7 +38,7 @@ export const BioList: Bio[] = [
 export const Socials: Social[] = [
   {
     name: "Github",
-    href: "https://github.com/jmwakz99",
+    href: "https://github.com/johnsonmwakazi-dev",
     isExternal: true,
     icon: <GitHubLogoIcon />,
   },

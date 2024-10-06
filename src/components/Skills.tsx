@@ -10,10 +10,10 @@ const Skills = () => {
     <div>
       <div className="hidden md:block">
         <div className="flex flex-row items-center  mb-10 w-full">
-          <AnimatedTooltip items={SKILLS.slice(0, 13)} />
+          <AnimatedTooltip items={SKILLS.slice(0, 8)} />
         </div>
         <div className="flex flex-row items-center  mb-10 w-full">
-          <AnimatedTooltip items={SKILLS.slice(13, 20)} />
+          <AnimatedTooltip items={SKILLS.slice(8, 16)} />
         </div>
       </div>
       <div className="md:hidden">
