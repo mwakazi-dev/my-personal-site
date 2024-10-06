@@ -12,7 +12,6 @@ import { Work } from "@/types/work";
 export const NavList: Nav[] = [
   { name: "Home", href: "/" },
   { name: "Works", href: "/works" },
-  { name: "Posts", href: "/posts" },
   {
     name: "Github",
     href: "https://github.com/jmwakz99",
@@ -22,39 +21,11 @@ export const NavList: Nav[] = [
 ];
 
 export const BioList: Bio[] = [
-  { year: "1993", description: "Born in Taita, Kenya." },
   {
-    year: "2014",
-    description: "Completed High School in Lifespring Christian Academy.",
-  },
-  {
-    year: "2015",
-    description:
-      "I realized my passion for tech and taught myself how to code.",
-  },
-  {
-    year: "2019",
-    description:
-      "Graduated with honors in Certified Public Accounting from KASNEB.",
-  },
-
-  {
-    year: "2017",
+    year: "2020",
     description: "Worked as a Frontend Developer at ",
     companyLink: "https://www.mjengosmart.com/",
     companyName: "Mjengo Smart",
-  },
-  {
-    year: "2019",
-    description: "Worked as a Frontend Developer at ",
-    companyLink: "https://www.wakilichapchap.co.ke/",
-    companyName: "Wakili ChapChap",
-  },
-  {
-    year: "2021",
-    description: "Worked as a Frontend Developer at ",
-    companyLink: "https://www.friyay.io/",
-    companyName: "Friyay",
   },
   {
     year: "2024",

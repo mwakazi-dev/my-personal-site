@@ -10,15 +10,20 @@ const About = () => {
   return (
     <div>
       <p className="indent-4 w-fit antialiased">
-        Johnson is a web and mobile developer with a passion for creating
-        seamless and engaging user experiences based in Kenya. He has extensive
-        experience working in diverse industries, including ecommerce and
-        construction. Johnson excels in building scalable, production-ready web
-        and mobile applications and is deeply involved in the full development
-        lifecycle, from planning and design to solving real-world challenges
-        with code. Beyond the technical realm, Johnson enjoys attending car
-        shows and meeting new people, always eager to explore new ideas and
-        experiences.
+        Hi, I&apos;m Johnson, a web and mobile developer with over 4 years of
+        experience. I&apos;ve had the opportunity to work on various projects,
+        ranging from web and mobile development to leading a team of developers.
+        I&apos;m known for my problem-solving skills and my ability to work
+        collaboratively with cross-functional teams. I&apos;ve also contributed
+        to open-source projects such as{" "}
+        <Link
+          className="text-primary"
+          href="https://github.com/boyuai/antd-country-phone-input"
+        >
+          antd-country-phone-input
+        </Link>
+        . Outside of work, I empower aspiring developers, read books, and play
+        video games.
       </p>
       <Link href="/works">
         <Button className="w-fit text white my-4 mx-auto text-white flex  justify-between gap-4 items-center">
