@@ -61,7 +61,17 @@ export const works: Work[] = [
     id: "poweredbypeople",
     companyName: "Powered by People",
     site: "https://www.poweredbypeople.com/",
-    stack: ["Typescript", "React", "Next.js", "Ant Design", "GraphQL Api"],
+    platform: "Web",
+    progress: "Completed",
+    stack: [
+      "Typescript",
+      "React",
+      "Next.js",
+      "Ant Design",
+      "GraphQL Api",
+      "Jest",
+      "Cypress",
+    ],
     summary: "Powered by People is a wholesale marketplace.",
     description:
       "Powered by People is a wholesale marketplace. It enables independent, diverse makers and brands by providing access to markets, financing, and digital tools.",
@@ -72,6 +82,8 @@ export const works: Work[] = [
     id: "mjengosmart",
     companyName: "MjengoSmart",
     site: "https://www.mjengosmart.com/",
+    progress: "Completed",
+    platform: "Web",
     stack: ["React", "Tailwind", "RESTful Api"],
     summary:
       "MjengoSmart is a platform that streamlines construction processes.",
@@ -88,6 +100,8 @@ export const works: Work[] = [
     id: "utally",
     companyName: "Utally",
     site: "https://utally-web-app.vercel.app/",
+    progress: "Ongoing",
+    platform: "Web",
     stack: [
       "Typescript",
       "React",
@@ -95,6 +109,7 @@ export const works: Work[] = [
       "Tailwind",
       "RESTful Api",
       "Firebase",
+      "Sendgrid",
     ],
     summary: "Utally is a platform that allows users to buy psn codes",
     description:
@@ -105,12 +120,14 @@ export const works: Work[] = [
       "/images/utally4.png",
       "/images/utally5.png",
     ],
-    year: "2017",
+    year: "2024",
   },
   {
     id: "afrotasker",
     companyName: "AfroTasker",
     site: "https://www.afrotasker.com/",
+    platform: "Web",
+    progress: "Ongoing",
     stack: [
       "Typescript",
       "React",
@@ -131,6 +148,33 @@ export const works: Work[] = [
     ],
     year: "2024",
   },
+
+  {
+    id: "afrotasker-app",
+    companyName: "AfroTasker Mobile App",
+    site: "",
+    progress: "Ongoing",
+    platform: "Mobile",
+    stack: [
+      "Typescript",
+      "React Native",
+      "Tailwind CSS",
+      "RESTful Api",
+      "Firebase",
+    ],
+    summary:
+      "AfroTasker is an app that connects people who need services with those who provide them.",
+    description:
+      "AfroTasker is an app that connects people who need services with those who provide them. As a user, you can create a profile and select the services you need. Then you can find a user who can provide the service you need using an uber like location based search. After they complete the assignment, the user is paid through the platform.",
+    images: [
+      "/images/afrotasker-mobile-1.png",
+      "/images/afrotasker-mobile-2.png",
+      "/images/afrotasker-mobile-3.png",
+      "/images/afrotasker-mobile-4.png",
+      "/images/afrotasker-mobile-5.png",
+    ],
+    year: "2024",
+  },
 ];
 
 export const SKILLS = [
@@ -144,7 +188,7 @@ export const SKILLS = [
   {
     id: 2,
     name: "TypeScript",
-    designation: "4 years",
+    designation: "2 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
   },
@@ -158,21 +202,21 @@ export const SKILLS = [
   {
     id: 4,
     name: "Next.js",
-    designation: "4 years",
+    designation: "2 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
   },
   {
     id: 5,
     name: "Tailwind CSS",
-    designation: "4 years",
+    designation: "3 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
   },
   {
     id: 6,
     name: "Ant Design",
-    designation: "4 years",
+    designation: "3 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/antdesign/antdesign-original.svg",
   },
@@ -187,7 +231,7 @@ export const SKILLS = [
   {
     id: 8,
     name: "Redux",
-    designation: "4 years",
+    designation: "3 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
   },
@@ -195,7 +239,7 @@ export const SKILLS = [
   {
     id: 9,
     name: "Jest",
-    designation: "4 years",
+    designation: "3 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg",
   },
@@ -203,7 +247,7 @@ export const SKILLS = [
   {
     id: 10,
     name: "Cypress",
-    designation: "4 years",
+    designation: "3 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-plain-wordmark.svg",
   },
@@ -245,7 +289,7 @@ export const SKILLS = [
   {
     id: 16,
     name: "Gitlab",
-    designation: "4 years",
+    designation: "3 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
   },

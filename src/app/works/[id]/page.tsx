@@ -16,10 +16,16 @@ type Props = {
 };
 
 const WorkDetails: FC<Props> = ({ params: { id } }) => {
-  const { companyName, year, description, site, stack, images } = findWork(
-    works,
-    id
-  );
+  const {
+    companyName,
+    year,
+    description,
+    site,
+    stack,
+    images,
+    platform,
+    progress,
+  } = findWork(works, id);
 
   return (
     <AnimatePresence>
@@ -43,24 +49,34 @@ const WorkDetails: FC<Props> = ({ params: { id } }) => {
             </span>
           </div>
           <p className="antialiased text-md indent-4 w-[100%]">{description}</p>
+
           <div className="px-4 flex flex-col gap-2 overflow-hidden">
-            <div className="flex items-center gap-2">
-              <span className="px-1 bg-neutral-200 anitialized  w-fit text-xs font-black dark:text-black ">
-                WEBSITE
-              </span>
-              <Link
-                href={site}
-                target="_blank"
-                className="text-md text-[#CB80AB] flex items-center gap-1"
-              >
-                {companyName} <ExternalLink className="w-4 h-4" />
-              </Link>
-            </div>
+            {site && (
+              <div className="flex items-center gap-2">
+                <span className="px-1 bg-neutral-200 anitialized  w-fit text-xs font-black dark:text-black ">
+                  WEBSITE
+                </span>
+                <Link
+                  href={site}
+                  target="_blank"
+                  className="text-md text-[#CB80AB] flex items-center gap-1"
+                >
+                  {companyName} <ExternalLink className="w-4 h-4" />
+                </Link>
+              </div>
+            )}
+
             <div className="px-1 flex items-center gap-2">
               <span className=" px-1 bg-neutral-200 anitialized  w-fit text-xs font-black  dark:text-black">
                 PLATFORM
               </span>
-              <p className="text-md flex items-center gap-1">Web</p>
+              <p className="text-md flex items-center gap-1">{platform}</p>
+            </div>
+            <div className="px-1 flex items-center gap-2">
+              <span className=" px-1 bg-neutral-200 anitialized  w-fit text-xs font-black  dark:text-black">
+                PROGRESS
+              </span>
+              <p className="text-md flex items-center gap-1">{progress}</p>
             </div>
             <div className="px-1 flex items-center gap-2 ">
               <span className="bg-neutral-200 anitialized  w-fit text-xs font-black  dark:text-black">
@@ -79,14 +95,14 @@ const WorkDetails: FC<Props> = ({ params: { id } }) => {
           </div>
           {(images as string[]).map((image) => (
             <div
-              className="flex flex-row gap-4 bg-primary relative w-full h-[250px]  md:h-[380px]"
+              className="flex flex-row gap-4  relative w-full h-[250px]  md:h-[380px]"
               key={image}
             >
               <Image
                 src={image}
                 fill={true}
                 alt="me"
-                style={{ objectFit: "cover" }}
+                style={{ objectFit: platform === "Web" ? "cover" : "contain" }}
                 loading="lazy"
               />
             </div>

@@ -14,11 +14,11 @@ const WorkItem: FC<Props> = ({
   return (
     <Link href={`/works/${id}`} className="w-full align ">
       <div className="flex flex-col items-center gap-4 w-full">
-        <div className="relative w-full h-[150px]  md:h-[200px]">
+        <div className="relative w-[100%] min-h-[250px]">
           <Image
             src={images[0]}
             fill
-            style={{ objectFit: "cover" }}
+            style={{ objectFit: "contain" }}
             alt="me"
             loading="lazy"
           />
