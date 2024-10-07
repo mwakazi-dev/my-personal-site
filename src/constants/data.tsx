@@ -14,7 +14,7 @@ export const NavList: Nav[] = [
   { name: "Works", href: "/works" },
   {
     name: "Github",
-    href: "https://github.com/johnsonmwakazi-dev",
+    href: "https://github.com/mwakazi-dev",
     isExternal: true,
     icon: <GitHubLogoIcon />,
   },
