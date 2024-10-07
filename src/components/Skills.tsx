@@ -13,7 +13,7 @@ const Skills = () => {
           <AnimatedTooltip items={SKILLS.slice(0, 8)} />
         </div>
         <div className="flex flex-row items-center  mb-10 w-full">
-          <AnimatedTooltip items={SKILLS.slice(8, 16)} />
+          <AnimatedTooltip items={SKILLS.slice(8, 17)} />
         </div>
       </div>
       <div className="md:hidden">
@@ -24,7 +24,7 @@ const Skills = () => {
           <AnimatedTooltip items={SKILLS.slice(6, 12)} />
         </div>
         <div className="flex flex-row items-center  mb-10 w-full">
-          <AnimatedTooltip items={SKILLS.slice(12, 15)} />
+          <AnimatedTooltip items={SKILLS.slice(12, 17)} />
         </div>
       </div>
     </div>

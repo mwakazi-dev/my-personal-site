@@ -38,7 +38,7 @@ export const BioList: Bio[] = [
 export const Socials: Social[] = [
   {
     name: "Github",
-    href: "https://github.com/johnsonmwakazi-dev",
+    href: "https://github.com/mwakazi-dev",
     isExternal: true,
     icon: <GitHubLogoIcon />,
   },
@@ -292,5 +292,12 @@ export const SKILLS = [
     designation: "3 years",
     image:
       "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/gitlab/gitlab-original.svg",
+  },
+  {
+    id: 17,
+    name: "ESLint",
+    designation: "3 years",
+    image:
+      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/eslint/eslint-original.svg",
   },
 ];
