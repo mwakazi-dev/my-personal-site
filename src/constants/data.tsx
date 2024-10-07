@@ -134,8 +134,7 @@ export const works: Work[] = [
       "Next js",
       "Tailwind",
       "RESTful Api",
-      "Prisma",
-      "Neon Database",
+      "Firebase",
     ],
     summary:
       "AfroTasker is a platform that connects people who need services with those who provide them.",
