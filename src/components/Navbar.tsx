@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <header className="fixed top-0 w-full flex flex-col justify-center items-center py-2 px-4 bg-white dark:bg-background z-50">
-      <div className="flex items-center justify-between w-full md:w-[50%]">
+      <div className="flex items-center justify-between w-full md:w-[60%]">
         <aside className="flex items-center justify-center gap-4">
           <Link
             href="/"

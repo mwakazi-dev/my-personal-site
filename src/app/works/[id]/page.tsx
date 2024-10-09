@@ -34,7 +34,7 @@ const WorkDetails: FC<Props> = ({ params: { id } }) => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2 } as any}
       >
-        <div className="flex flex-col justify-center p-4 md:w-[40%] mx-auto  gap-4 my-16 ">
+        <div className="flex flex-col justify-center p-4 md:w-[50%] mx-auto  gap-4 my-16 ">
           <div className="flex items-center gap-2">
             <Link
               href="/works"

@@ -22,16 +22,16 @@ export const NavList: Nav[] = [
 
 export const BioList: Bio[] = [
   {
-    year: "2020",
-    description: "Worked as a Frontend Developer at ",
-    companyLink: "https://www.mjengosmart.com/",
-    companyName: "Mjengo Smart",
-  },
-  {
     year: "2024",
-    description: "Worked as a Frontend Developer at ",
+    description: "Worked as a Senior Frontend Engineer at ",
     companyLink: "https://www.poweredbypeople.com/",
     companyName: "Powered by People",
+  },
+  {
+    year: "2021",
+    description: "Worked as a Frontend Engineer at ",
+    companyLink: "https://www.mjengosmart.com/",
+    companyName: "Mjengo Smart",
   },
 ];
 
