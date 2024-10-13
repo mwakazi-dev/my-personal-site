@@ -19,16 +19,20 @@ const WorkList = () => {
         </TabsList>
         <TabsContent value="completed">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {works.slice(0, 2).map((work) => (
-              <WorkItem key={work.companyName} work={work} />
-            ))}
+            {works
+              .filter((work) => work.progress === "Completed")
+              .map((work) => (
+                <WorkItem key={work.companyName} work={work} />
+              ))}
           </div>
         </TabsContent>
         <TabsContent value="ongoing">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {works.slice(2, 4).map((work) => (
-              <WorkItem key={work.companyName} work={work} />
-            ))}
+            {works
+              .filter((work) => work.progress === "Ongoing")
+              .map((work) => (
+                <WorkItem key={work.companyName} work={work} />
+              ))}
           </div>
         </TabsContent>
         <TabsContent value="mobile">
