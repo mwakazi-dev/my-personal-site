@@ -10,20 +10,22 @@ const About = () => {
   return (
     <div>
       <p className="indent-4 w-fit antialiased">
-        Hi, I&apos;m Johnson, a web and mobile developer with over 4 years of
-        experience. I&apos;ve had the opportunity to work on various projects,
-        ranging from web and mobile development to leading a team of developers.
-        I&apos;m known for my problem-solving skills and my ability to work
-        collaboratively with cross-functional teams. I&apos;ve also contributed
-        to open-source projects such as{" "}
+        I am a web and mobile developer with over 4 years of experience,
+        specializing in building scalable applications and leading development
+        teams. My expertise spans various projects in both web and mobile
+        development, where I have consistently demonstrated strong
+        problem-solving skills and the ability to collaborate effectively with
+        cross-functional teams. I have contributed to open-source projects, such
+        as{"  "}
         <Link
-          className="text-primary"
           href="https://github.com/boyuai/antd-country-phone-input"
+          className="text-primary"
         >
           antd-country-phone-input
         </Link>
-        . Outside of work, I empower aspiring developers, read books, and play
-        video games.
+        , showcasing my commitment to community-driven development. Outside of
+        work, I am passionate about empowering aspiring developers, enjoying
+        reading, and playing video games.
       </p>
       <Link href="/works">
         <Button className="w-fit text white my-4 mx-auto text-white flex  justify-between gap-4 items-center">
