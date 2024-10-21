@@ -99,7 +99,7 @@ export const works: Work[] = [
   {
     id: "utally",
     companyName: "Utally",
-    site: "https://utally-web-app.vercel.app/",
+    site: "https://u-tally.com",
     progress: "Completed",
     platform: "Web",
     stack: [
