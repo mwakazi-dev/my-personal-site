@@ -174,6 +174,24 @@ export const works: Work[] = [
     ],
     year: "2024",
   },
+  {
+    id: "agent-insight",
+    companyName: "Agent Insight",
+    site: "https://agent-insight-five.vercel.app/",
+    progress: "Completed",
+    platform: "Web",
+    stack: ["Typescript", "Next.js", "Ant Design", "RESTful Api", "Firebase"],
+    summary:
+      "The project is a secure web app for field agents to log in, collect product data with geolocation tracking, and sync it with an admin dashboard.",
+    description:
+      "The project is a secure web app for field agents to log in, collect product data with geolocation tracking, and sync it with an admin dashboard. The dashboard allows real-time report generation, account management, and data visualization for administrators.",
+    images: [
+      "/images/agent_1.png",
+      "/images/agent_3.png",
+      "/images/agent_2.png",
+    ],
+    year: "2024",
+  },
 ];
 
 export const SKILLS = [
