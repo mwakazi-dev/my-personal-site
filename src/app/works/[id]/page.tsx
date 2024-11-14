@@ -27,6 +27,8 @@ const WorkDetails: FC<Props> = ({ params: { id } }) => {
     progress,
   } = findWork(works, id);
 
+  console.log(platform);
+
   return (
     <AnimatePresence>
       <motion.div
@@ -93,20 +95,39 @@ const WorkDetails: FC<Props> = ({ params: { id } }) => {
               ))}
             </div>
           </div>
-          {(images as string[]).map((image) => (
-            <div
-              className="flex flex-row gap-4  relative w-full h-[250px]  md:h-[380px]"
-              key={image}
-            >
-              <Image
-                src={image}
-                fill={true}
-                alt="me"
-                style={{ objectFit: platform === "Web" ? "cover" : "contain" }}
-                loading="lazy"
-              />
+          {platform === "Android/IOS" && (
+            <div className="flex flex-row gap-8 flex-wrap  relative  h-[250px]  md:h-[380px]">
+              {(images as string[]).map((image) => (
+                <Image
+                  key={image}
+                  src={image}
+                  alt="me"
+                  width={200}
+                  height={200}
+                  style={{
+                    objectFit: platform === "Web" ? "cover" : "contain",
+                  }}
+                  loading="lazy"
+                />
+              ))}
             </div>
-          ))}
+          )}
+          {platform === "Web" && (
+            <div className="flex flex-row gap-8 flex-wrap  relative  h-[250px]  md:h-[380px]">
+              {(images as string[]).map((image) => (
+                <Image
+                  key={image}
+                  src={image}
+                  alt="me"
+                  fill
+                  style={{
+                    objectFit: platform === "Web" ? "cover" : "contain",
+                  }}
+                  loading="lazy"
+                />
+              ))}
+            </div>
+          )}
         </div>
       </motion.div>
     </AnimatePresence>

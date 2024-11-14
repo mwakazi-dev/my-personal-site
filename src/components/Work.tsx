@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { Work } from "@/types/work";
+import { EyeIcon } from "lucide-react";
 
 type Props = {
   work: Work;
@@ -27,6 +28,7 @@ const WorkItem: FC<Props> = ({
           <h2 className="text-md  font-bold antialiased">{companyName}</h2>
           <p className="text-sm text-center w-[90%] antialiased">{summary}</p>
         </div>
+        <EyeIcon className="w-6 h-6" />
       </div>
     </Link>
   );

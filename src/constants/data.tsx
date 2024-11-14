@@ -157,20 +157,23 @@ export const works: Work[] = [
     stack: [
       "Typescript",
       "React Native",
-      "Nativewind",
+      "React Native Paper",
       "RESTful Api",
       "Firebase",
+      "Firebase ML",
+      "AI",
+      "ML",
     ],
     summary:
       "AfroTasker is an app that connects people who need services with those who provide them.",
     description:
       "AfroTasker is an app that connects people who need services with those who provide them. As a user, you can create a profile and select the services you need. Then you can find a user who can provide the service you need using an uber like location based search. After they complete the assignment, the user is paid through the platform.",
     images: [
-      "/images/afrotasker-mobile-1.png",
-      "/images/afrotasker-mobile-2.png",
-      "/images/afrotasker-mobile-3.png",
-      "/images/afrotasker-mobile-4.png",
-      "/images/afrotasker-mobile-5.png",
+      "/images/a_1.png",
+      "/images/a_2.png",
+      "/images/a_3.png",
+      "/images/a_4.png",
+      "/images/a_5.png",
     ],
     year: "2024",
   },
@@ -178,7 +181,7 @@ export const works: Work[] = [
     id: "agent-insight",
     companyName: "Agent Insight",
     site: "https://agent-insight-five.vercel.app/",
-    progress: "Completed",
+    progress: "Ongoing",
     platform: "Web",
     stack: ["Typescript", "Next.js", "Ant Design", "RESTful Api", "Firebase"],
     summary:

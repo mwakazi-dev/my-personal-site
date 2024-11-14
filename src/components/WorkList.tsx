@@ -8,7 +8,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "./ui/tabs";
 
 const WorkList = () => {
   return (
-    <div className=" flex flex-col">
+    <div className=" flex flex-col gap-4">
       <Tabs defaultValue="completed" className="w-full bg-transparent ">
         <TabsList className="flex justify-start w-full grid-cols-2 mt-4">
           <TabsTrigger value="completed" className="">
@@ -36,8 +36,8 @@ const WorkList = () => {
           </div>
         </TabsContent>
         <TabsContent value="mobile">
-          <div className="grid grid-cols-4 gap-4">
-            {works.slice(4, 6).map((work) => (
+          <div className="flex flex-row justify-start gap-4">
+            {works.slice(4, 5).map((work) => (
               <WorkItem key={work.companyName} work={work} />
             ))}
           </div>
