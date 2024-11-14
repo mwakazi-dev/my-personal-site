@@ -95,39 +95,41 @@ const WorkDetails: FC<Props> = ({ params: { id } }) => {
               ))}
             </div>
           </div>
-          {platform === "Android/IOS" && (
-            <div className="flex flex-row gap-8 flex-wrap  relative  h-[250px]  md:h-[380px]">
-              {(images as string[]).map((image) => (
+
+          {platform === "Web" &&
+            (images as string[]).map((image) => (
+              <div
+                className="flex flex-row gap-4  relative w-[] h-[250px]  md:h-[380px]"
+                key={image}
+              >
                 <Image
-                  key={image}
                   src={image}
+                  fill={true}
                   alt="me"
-                  width={200}
-                  height={200}
                   style={{
                     objectFit: platform === "Web" ? "cover" : "contain",
                   }}
                   loading="lazy"
                 />
-              ))}
-            </div>
-          )}
-          {platform === "Web" && (
-            <div className="flex flex-row gap-8 flex-wrap  relative  h-[250px]  md:h-[380px]">
-              {(images as string[]).map((image) => (
+              </div>
+            ))}
+
+          <div className="flex flex-row flex-wrap gap-8  relative w-full ">
+            {platform === "Android/IOS" &&
+              (images as string[]).map((image) => (
                 <Image
                   key={image}
                   src={image}
+                  width={250}
+                  height={250}
                   alt="me"
-                  fill
                   style={{
-                    objectFit: platform === "Web" ? "cover" : "contain",
+                    objectFit: "contain",
                   }}
                   loading="lazy"
                 />
               ))}
-            </div>
-          )}
+          </div>
         </div>
       </motion.div>
     </AnimatePresence>
