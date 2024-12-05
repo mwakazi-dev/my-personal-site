@@ -22,6 +22,12 @@ export const NavList: Nav[] = [
 
 export const BioList: Bio[] = [
   {
+    year: "Present",
+    description: "Working as a Senior Frontend Developer at ",
+    companyLink: "https://cioafrica.co/",
+    companyName: "CIO Africa",
+  },
+  {
     year: "2024",
     description: "Worked as a Senior Frontend Engineer at ",
     companyLink: "https://www.poweredbypeople.com/",
@@ -176,6 +182,26 @@ export const works: Work[] = [
       "/images/a_5.png",
     ],
     year: "2024",
+  },
+  {
+    id: "cio-africa",
+    companyName: "CIO Africa",
+    site: "https://cioafrica.co/",
+    progress: "Ongoing",
+    platform: "Web",
+    stack: [
+      "Typescript",
+      "Next.js",
+      "Tailwind CSS",
+      "RESTful Api",
+      "Wordpress",
+    ],
+    summary:
+      "TCIO Africa serves the enterprise community of CIOs and senior technology decision-makers with peer insight and expertise on Business Strategy, Innovation and Leadership.",
+    description:
+      "TCIO Africa serves the enterprise community of CIOs and senior technology decision-makers with peer insight and expertise on Business Strategy, Innovation and Leadership. CIO attracts the highest concentration of enterprise CIOs and business technology executives of any media brand, reaching over one million.",
+    images: ["/images/cio_1.png", "/images/cio_2.png", "/images/cio_3.png"],
+    year: "Present",
   },
   {
     id: "agent-insight",
